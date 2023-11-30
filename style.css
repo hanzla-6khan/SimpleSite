@@ -1,0 +1,1313 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+  /* box-sizing:border-box; */
+}
+body {
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  /* background: #000; */
+  /* width: 100%; */
+}
+
+nav {
+  background: white;
+  width: 100%;
+  height: 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav label {
+  font-size: 2.5rem;
+  padding: 1rem;
+  color: rgb(10, 8, 8);
+  cursor: pointer;
+}
+
+nav ul {
+  float: right;
+  padding-top: 1rem;
+  margin-right: 2rem;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 2rem;
+  margin: 0rem 1rem;
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: rgb(10, 8, 8);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav ul li a i {
+  font-size: 15px;
+  padding: 2px;
+  padding-top: 1rem;
+}
+
+nav ul li a:hover {
+  color: #3498db; /* Change to your preferred hover color */
+}
+
+/* Mobile Menu Styles */
+
+.checkbtn {
+  font-size: 1.5rem;
+  color: black;
+  float: right;
+  margin-right: 1rem;
+  display: none;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+/* Responsive Styles for Small Screens */
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    text-align: center;
+    width: 100%;
+    background-color: #f8f9fa; /* Background color for mobile menu */
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  #check:checked + nav ul {
+    display: block;
+  }
+}
+
+/* ......header section ......    */
+
+header {
+  background-image: url(/picture/bg.jpg);
+  height: 100vh;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header h1 {
+  padding-top: 5rem;
+  font-size: 3rem;
+  color: azure;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+header p {
+  width: 50rem;
+  margin-left: 18rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+header .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .input #city {
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  margin: 0.4rem;
+  width: 8rem;
+}
+header .input #Search {
+  padding: 0.8rem;
+  margin: 0.4rem;
+  border-radius: 0.4rem;
+  width: 30rem;
+}
+header .input .btn {
+  background: blue;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+}
+
+.btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+/* section start     */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.one {
+  padding-bottom: -30px;
+}
+.main {
+  background: rgb(241, 234, 234);
+  width: 17rem;
+  height: 50vh;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  margin-top: -5rem;
+}
+.main .card {
+  align-items: center;
+  justify-content: center;
+  width: 16rem;
+  height: 60vh;
+}
+.main .card h2 {
+  margin-left: 2rem;
+}
+
+.main .card p {
+  position: absolute;
+  page-break-after: 20px;
+  text-align: center;
+  margin-left: 2rem;
+}
+.main .card .btn {
+  margin: 4.8rem;
+}
+.main .card img {
+  margin-left: 3rem;
+  padding-top: 2rem;
+  width: 10rem;
+  height: 20vh;
+}
+.main .card:hover {
+  transition: 0.5s;
+  color: black;
+  opacity: 0.2;
+  transform: translateY(50px);
+  box-shadow: 0 0 0 0 #e91e63;
+}
+/* ...... our services  .....     */
+.content {
+  background: rgb(248 248 251);
+  width: 100%;
+  height: 128vh;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+}
+.content h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.content p {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(337px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid .image {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  height: 15rem;
+  margin: 1.4rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.grid .image:hover {
+  transform: scale(0.95) rotate(-1deg);
+  opacity: 0.8;
+}
+
+.grid .image h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.grid .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ......... our services   ......   */
+.text h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  /* padding: 2rem; */
+}
+.text p {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.whole {
+  display: flex;
+  background: white;
+  width: 100%;
+}
+.whole .sec1 img {
+  width: 32rem;
+  /* padding-top: 18px; */
+  margin-left: 3rem;
+  height: 62vh;
+}
+.whole .sub-sec {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  padding-left: 2rem;
+}
+.whole .sub-sec img {
+  /* display:flex; */
+  width: 18rem;
+  /* margin: 0.4rem; */
+  height: 30vh;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+}
+.container .centered ul {
+  display: flex;
+  position: absolute;
+  bottom: 7rem;
+  left: -28rem;
+}
+.container .centered ul li {
+  margin: 0.4rem;
+  width: 2rem;
+  height: 4.2vh;
+  background: yellow;
+  color: black;
+  border-radius: 0.4rem;
+}
+.container .centered h2 {
+  position: absolute;
+  bottom: 5rem;
+  left: -28rem;
+}
+.container .centered p {
+  position: absolute;
+  bottom: 3rem;
+  left: -28rem;
+}
+
+/* ..................  
+ */
+.overallsection {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2rem;
+}
+
+.box {
+  display: flex;
+  /* background: rgb(212, 192, 192); */
+  width: 40rem;
+  height: 40vh;
+}
+.box .bimg {
+  padding: 2rem;
+}
+.box .bimg img {
+  width: 10rem;
+  height: 25vh;
+}
+.bcont {
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+.bcont h2 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.bcont p {
+  padding-top: 1rem;
+}
+.bcont ul li {
+  display: inline-block;
+  padding: 0.2rem;
+  background: green;
+  color: white;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.3rem;
+}
+.bcont ul li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.ico ul li {
+  background: white;
+  margin: 0.3rem;
+  width: 4rem;
+  height: 4vh;
+  color: black;
+  /* align-items: center; */
+  /* padding: 1rem 0 0 1rem; */
+  border: 1px solid #ddd;
+}
+.ico ul li i {
+  color: black;
+  font-size: 1rem;
+  /* margin: 0.7rem; */
+  /* padding:0rem 1rem 0rem 0rem; */
+}
+
+/* create account sectioni    */
+.mainbox {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.more {
+  margin: 1rem;
+  font-size: -10rem;
+}
+.mainbox .box1 {
+  width: 40rem;
+  height: 42vh;
+  /* background: green; */
+  margin: 1rem;
+}
+.box2 {
+  width: 40rem;
+  height: 85vh;
+  background: #f1ebeb;
+}
+.bar ul a {
+  font-size: 4rem;
+  padding-left: 6rem;
+  padding-top: 2rem;
+}
+.box1 h1 {
+  padding-left: 6rem;
+}
+.box1 p {
+  padding-left: 6rem;
+}
+
+.bar2 h2 {
+  padding-left: 6rem;
+}
+.bar2 p {
+  padding: 1rem;
+  padding-left: 6rem;
+}
+
+div .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.in {
+  /* background: #000; */
+  margin-left: 5rem;
+  width: 35rem;
+  height: 26vh;
+  overflow: hidden;
+  /* background: yellow; */
+}
+.in input.check {
+  width: 1rem;
+}
+.in p {
+  margin-top: -2rem;
+  padding-left: 6rem;
+
+  /* margin: 3rem; */
+}
+
+.box2 input {
+  width: 28rem;
+  height: 3vh;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  margin-left: 5rem;
+  border-radius: 0.4rem;
+}
+button .buton {
+  width: 2rem;
+  height: 4vh;
+  color: #e91e63;
+  padding-left: 3rem;
+  background: #000;
+}
+
+/* ........... foooter section l.........   */
+.box5 {
+  background: rgb(21, 31, 49);
+  width: 100%;
+  height: 77vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(217px, 1fr));
+  grid-gap: 20px;
+}
+
+.box6 {
+  /* background: yellow; */
+  width: 17rem;
+  height: 30vh;
+  color: white;
+  padding: 1rem;
+  margin-left: 1rem;
+  /* background:white; */
+}
+.box7 {
+  width: 30rem;
+  /* background: yellow; */
+}
+.box7 ul li {
+  display: inline-block;
+  margin: 0.1rem;
+  background: rgb(36, 38, 43);
+  width: 3rem;
+  height: 8vh;
+  border-radius: 20rem;
+  color: var(--clr);
+}
+.box7 ul li:hover {
+  background: orange;
+  /* font-size: 2em; */
+}
+.box7 ul li:hover i {
+  /* top: 1rem; */
+  transform: translateY(-20px);
+  filter: drop-shadow(0 0 60px orange);
+}
+/* .......................   */
+
+ul li:hover {
+  z-index: 10;
+  transform: scale(0.75);
+  /* transform:rotateY(-10rem)
+     */
+}
+
+/* ..........................  */
+
+.box7 ul li i {
+  font-size: 1.4rem;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0rem 0rem 0.6rem;
+  transition: 0.5s linear;
+}
+.box7 ul li i:hover {
+  /* transform: rotate(360deg); */
+  font-size: 2rem;
+  transform: translateY(-20px);
+  /* transform: rotate(-360deg) */
+}
+
+button.bt {
+  width: 9rem;
+  font-size: 1.4rem;
+  height: 9vh;
+  background: #f44336;
+  color: white;
+  align-items: center;
+  border-radius: 0.4rem;
+  margin-left: 8rem;
+  margin-top: 2rem;
+  /* padding-top: 2rem; */
+}
+button .bt:hover {
+  background: #151f31;
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  height: 6vh;
+
+  /* background: rgba(48, 38, 38, 0); */
+  background: rgb(4, 18, 31);
+}
+footer p {
+  /* align-items: center; */
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+  color: #cccc;
+}
+div#Explopre {
+  padding-top: 0rem;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+  /* box-sizing:border-box; */
+}
+body {
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  /* background: #000; */
+  /* width: 100%; */
+}
+
+nav {
+  background: white;
+  width: 100%;
+  height: 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav label {
+  font-size: 2.5rem;
+  padding: 1rem;
+  color: rgb(10, 8, 8);
+  cursor: pointer;
+}
+
+nav ul {
+  float: right;
+  padding-top: 1rem;
+  margin-right: 2rem;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 2rem;
+  margin: 0rem 1rem;
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: rgb(10, 8, 8);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav ul li a i {
+  font-size: 15px;
+  padding: 2px;
+  padding-top: 1rem;
+}
+
+nav ul li a:hover {
+  color: #3498db; /* Change to your preferred hover color */
+}
+
+/* Mobile Menu Styles */
+
+.checkbtn {
+  font-size: 1.5rem;
+  color: black;
+  float: right;
+  margin-right: 1rem;
+  display: none;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+/* Responsive Styles for Small Screens */
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    text-align: center;
+    width: 100%;
+    background-color: #f8f9fa; /* Background color for mobile menu */
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  #check:checked + nav ul {
+    display: block;
+  }
+}
+
+/* ......header section ......    */
+
+header {
+  background-image: url(/picture/bg.jpg);
+  height: 100vh;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header h1 {
+  padding-top: 5rem;
+  font-size: 3rem;
+  color: azure;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+header p {
+  width: 50rem;
+  margin-left: 18rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+header .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .input #city {
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  margin: 0.4rem;
+  width: 8rem;
+}
+header .input #Search {
+  padding: 0.8rem;
+  margin: 0.4rem;
+  border-radius: 0.4rem;
+  width: 30rem;
+}
+header .input .btn {
+  background: blue;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+}
+
+.btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+/* section start     */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.one {
+  padding-bottom: -30px;
+}
+.main {
+  background: rgb(241, 234, 234);
+  width: 17rem;
+  height: 50vh;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  margin-top: -5rem;
+}
+.main .card {
+  align-items: center;
+  justify-content: center;
+  width: 16rem;
+  height: 60vh;
+}
+.main .card h2 {
+  margin-left: 2rem;
+}
+
+.main .card p {
+  position: absolute;
+  page-break-after: 20px;
+  text-align: center;
+  margin-left: 2rem;
+}
+.main .card .btn {
+  margin: 4.8rem;
+}
+.main .card img {
+  margin-left: 3rem;
+  padding-top: 2rem;
+  width: 10rem;
+  height: 20vh;
+}
+.main .card:hover {
+  transition: 0.5s;
+  color: black;
+  opacity: 0.2;
+  transform: translateY(50px);
+  box-shadow: 0 0 0 0 #e91e63;
+}
+/* ...... our services  .....     */
+.content {
+  background: rgb(248 248 251);
+  width: 100%;
+  height: 128vh;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+}
+.content h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.content p {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(337px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid .image {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  height: 15rem;
+  margin: 1.4rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.grid .image:hover {
+  transform: scale(0.95) rotate(-1deg);
+  opacity: 0.8;
+}
+
+.grid .image h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.grid .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ......... our services   ......   */
+.text h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  /* padding: 2rem; */
+}
+.text p {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.whole {
+  display: flex;
+  background: white;
+  width: 100%;
+}
+.whole .sec1 img {
+  width: 32rem;
+  /* padding-top: 18px; */
+  margin-left: 3rem;
+  height: 62vh;
+}
+.whole .sub-sec {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  padding-left: 2rem;
+}
+.whole .sub-sec img {
+  /* display:flex; */
+  width: 18rem;
+  /* margin: 0.4rem; */
+  height: 30vh;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+}
+.container .centered ul {
+  display: flex;
+  position: absolute;
+  bottom: 7rem;
+  left: -28rem;
+}
+.container .centered ul li {
+  margin: 0.4rem;
+  width: 2rem;
+  height: 4.2vh;
+  background: yellow;
+  color: black;
+  border-radius: 0.4rem;
+}
+.container .centered h2 {
+  position: absolute;
+  bottom: 5rem;
+  left: -28rem;
+}
+.container .centered p {
+  position: absolute;
+  bottom: 3rem;
+  left: -28rem;
+}
+
+/* ..................  
+ */
+.overallsection {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2rem;
+}
+
+.box {
+  display: flex;
+  /* background: rgb(212, 192, 192); */
+  width: 40rem;
+  height: 40vh;
+}
+.box .bimg {
+  padding: 2rem;
+}
+.box .bimg img {
+  width: 10rem;
+  height: 25vh;
+}
+.bcont {
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+.bcont h2 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.bcont p {
+  padding-top: 1rem;
+}
+.bcont ul li {
+  display: inline-block;
+  padding: 0.2rem;
+  background: green;
+  color: white;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.3rem;
+}
+.bcont ul li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.ico ul li {
+  background: white;
+  margin: 0.3rem;
+  width: 4rem;
+  height: 4vh;
+  color: black;
+  /* align-items: center; */
+  /* padding: 1rem 0 0 1rem; */
+  border: 1px solid #ddd;
+}
+.ico ul li i {
+  color: black;
+  font-size: 1rem;
+  /* margin: 0.7rem; */
+  /* padding:0rem 1rem 0rem 0rem; */
+}
+
+/* create account sectioni    */
+.mainbox {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.more {
+  margin: 1rem;
+  font-size: -10rem;
+}
+.mainbox .box1 {
+  width: 40rem;
+  height: 42vh;
+  /* background: green; */
+  margin: 1rem;
+}
+.box2 {
+  width: 40rem;
+  height: 85vh;
+  background: #f1ebeb;
+}
+.bar ul a {
+  font-size: 4rem;
+  padding-left: 6rem;
+  padding-top: 2rem;
+}
+.box1 h1 {
+  padding-left: 6rem;
+}
+.box1 p {
+  padding-left: 6rem;
+}
+
+.bar2 h2 {
+  padding-left: 6rem;
+}
+.bar2 p {
+  padding: 1rem;
+  padding-left: 6rem;
+}
+
+div .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.in {
+  /* background: #000; */
+  margin-left: 5rem;
+  width: 35rem;
+  height: 26vh;
+  overflow: hidden;
+  /* background: yellow; */
+}
+.in input.check {
+  width: 1rem;
+}
+.in p {
+  margin-top: -2rem;
+  padding-left: 6rem;
+
+  /* margin: 3rem; */
+}
+
+.box2 input {
+  width: 28rem;
+  height: 3vh;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  margin-left: 5rem;
+  border-radius: 0.4rem;
+}
+button .buton {
+  width: 2rem;
+  height: 4vh;
+  color: #e91e63;
+  padding-left: 3rem;
+  background: #000;
+}
+
+/* ........... foooter section l.........   */
+.box5 {
+  background: rgb(21, 31, 49);
+  width: 100%;
+  height: 77vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(217px, 1fr));
+  grid-gap: 20px;
+}
+
+.box6 {
+  /* background: yellow; */
+  width: 17rem;
+  height: 30vh;
+  color: white;
+  padding: 1rem;
+  margin-left: 1rem;
+  /* background:white; */
+}
+.box7 {
+  width: 30rem;
+  /* background: yellow; */
+}
+.box7 ul li {
+  display: inline-block;
+  margin: 0.1rem;
+  background: rgb(36, 38, 43);
+  width: 3rem;
+  height: 8vh;
+  border-radius: 20rem;
+  color: var(--clr);
+}
+.box7 ul li:hover {
+  background: orange;
+  /* font-size: 2em; */
+}
+.box7 ul li:hover i {
+  /* top: 1rem; */
+  transform: translateY(-20px);
+  filter: drop-shadow(0 0 60px orange);
+}
+/* .......................   */
+
+ul li:hover {
+  z-index: 10;
+  transform: scale(0.75);
+  /* transform:rotateY(-10rem)
+     */
+}
+
+/* ..........................  */
+
+.box7 ul li i {
+  font-size: 1.4rem;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0rem 0rem 0.6rem;
+  transition: 0.5s linear;
+}
+.box7 ul li i:hover {
+  /* transform: rotate(360deg); */
+  font-size: 2rem;
+  transform: translateY(-20px);
+  /* transform: rotate(-360deg) */
+}
+
+button.bt {
+  width: 9rem;
+  font-size: 1.4rem;
+  height: 9vh;
+  background: #f44336;
+  color: white;
+  align-items: center;
+  border-radius: 0.4rem;
+  margin-left: 8rem;
+  margin-top: 2rem;
+  /* padding-top: 2rem; */
+}
+button .bt:hover {
+  background: #151f31;
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  height: 6vh;
+
+  /* background: rgba(48, 38, 38, 0); */
+  background: rgb(4, 18, 31);
+}
+footer p {
+  /* align-items: center; */
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+  color: #cccc;
+}
+div#Explopre {
+  padding-top: 0rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: lightblue;
+  }
+  nav {
+    position: sticky;
+    top: 0.5rem;
+  }
+  nav ul {
+    margin-right: 2rem;
+  }
+
+  nav label {
+    font-size: 2rem;
+    /* padding: -1rem; */
+  }
+  .box2 {
+    width: 17rem;
+  }
+  .box2 input {
+    width: 9rem;
+    position: relative;
+    padding-right: -3rem;
+    left: -2rem;
+  }
+  .in {
+    margin-left: -5rem;
+    width: 22rem;
+    height: 19vh;
+  }
+
+  .overallsection {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    width: 32rem;
+  }
+  .main {
+    width: 12rem;
+    height: 50vh;
+  }
+  .main .card img {
+    margin-left: 4rem;
+    padding-top: 2rem;
+    width: 3rem;
+    height: 12vh;
+  }
+  .main .card .btn {
+    margin: 3.5rem;
+  }
+  .main .card p {
+    margin-left: 0rem;
+  }
+  .main .card h2 {
+    margin-left: 2rem;
+    font-size: 0.9rem;
+  }
+  .main .card {
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    background: #cbcbed;
+    height: 62vh;
+  }
+  .whole .sub-sec img {
+    width: 12rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
+  }
+  .grid .image {
+    height: 9rem;
+    width: 291px;
+  }
+  div#Explopre {
+    padding-top: 25rem;
+  }
+  .text {
+    padding-top: 6rem;
+  }
+  .box5 {
+    height: 194vh;
+  }
+  footer {
+    width: 100%;
+    height: 10vh;
+  }
+}

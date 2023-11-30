@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    /* background:yellow; */
+
+} ul{
+    position: relative;
+    display: flex ;
+  
+   
+    
+}
+ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 5rem;
+    height: 15vh;
+    list-style: none;
+    margin: 1rem;
+    top:159px;
+    left: 150px;
+    bottom: 100px;
+    transition: 0.5s;
+    font-size: 3rem;
+    border-radius: 4rem;
+    background:rgb(243, 236, 236);
+    box-shadow: inset -1px -1px 2px rgba(0 , 0, 0, 2);
+}
+ul li a{
+  
+    color: black;
+    font-size: 2rem;
+}
+ul li:hover{
+    color: #999;
+    transform: translateY(-20px);
+    box-shadow: inset -1px -1px 2px rgba(0 , 0, 0, 2)
+    2px 5px 10px rgba(0 , 0, 0, 2);
+
+}
+ul li:before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 4rem;
+    border: 2px solid rgba(0 , 0, 0, 0.1);
+
+}
+ul li:nth-child(1)a:before{
+    background: rgb(51, 51, 233);
+    
+     
+}
+
